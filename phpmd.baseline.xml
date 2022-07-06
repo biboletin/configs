@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<phpmd-baseline>
+  <violation rule="PHPMD\Rule\UnusedLocalVariable" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseClassName" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCasePropertyName" file="php.php"/>
+  <violation rule="PHPMD\Rule\Design\LongClass" file="php.php"/>
+  <violation rule="PHPMD\Rule\Design\TooManyFields" file="php.php"/>
+  <violation rule="PHPMD\Rule\Design\TooManyPublicMethods" file="php.php"/>
+  <violation rule="PHPMD\Rule\Design\WeightedMethodCount" file="php.php"/>
+  <violation rule="PHPMD\Rule\UnusedPrivateField" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseMethodName" file="php.php" method="mysql_down"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="getNumRows"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="set_act_type"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="set_act_type"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseMethodName" file="php.php" method="set_act_type"/>
+  <violation rule="PHPMD\Rule\UnusedFormalParameter" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="html_header"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="html_header"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseMethodName" file="php.php" method="html_header"/>
+  <violation rule="PHPMD\Rule\CleanCode\UndefinedVariable" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseMethodName" file="php.php" method="html_foother"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="getActDocument"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="getActDocument"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="getActName"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="getActName"/>
+  <violation rule="PHPMD\Rule\CyclomaticComplexity" file="php.php" method="getActName"/>
+  <violation rule="PHPMD\Rule\CyclomaticComplexity" file="php.php" method="validate"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseMethodName" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\CyclomaticComplexity" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\Design\NpathComplexity" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\Design\LongMethod" file="php.php" method="form_actDocuments"/>
+  <violation rule="PHPMD\Rule\CleanCode\BooleanArgumentFlag" file="php.php"/>
+  <violation rule="PHPMD\Rule\Naming\LongVariable" file="php.php"/>
+  <violation rule="PHPMD\Rule\CleanCode\ElseExpression" file="php.php"/>
+  <violation rule="PHPMD\Rule\Naming\ShortVariable" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="generatePageToPrint"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="generatePageToPrint"/>
+  <violation rule="PHPMD\Rule\CyclomaticComplexity" file="php.php" method="generatePageToPrint"/>
+  <violation rule="PHPMD\Rule\Design\NpathComplexity" file="php.php" method="generatePageToPrint"/>
+  <violation rule="PHPMD\Rule\Design\LongMethod" file="php.php" method="generatePageToPrint"/>
+  <violation rule="PHPMD\Rule\Design\CountInLoopExpression" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\Superglobals" file="php.php" method="saveDocument"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="saveDocument"/>
+  <violation rule="PHPMD\Rule\CyclomaticComplexity" file="php.php" method="saveDocument"/>
+  <violation rule="PHPMD\Rule\Design\NpathComplexity" file="php.php" method="saveDocument"/>
+  <violation rule="PHPMD\Rule\Design\LongMethod" file="php.php" method="saveDocument"/>
+  <violation rule="PHPMD\Rule\Design\ExitExpression" file="php.php"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseParameterName" file="php.php" method="getDeaktuvaneInfo"/>
+  <violation rule="PHPMD\Rule\Controversial\CamelCaseVariableName" file="php.php" method="getDeaktuvaneInfo"/>
+</phpmd-baseline>
