@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="pcsg-generated-ruleset">
-    <description>None</description>
-    <arg name="colors"/>
+	<description>None</description>
+	<arg name="colors"/>
 	<arg name="parallel" value="75"/>
 	<arg value="np"/>
 	<rule ref="Internal.Tokenizer.Exception">
-        <type>error</type>
-    </rule>
-    <rule ref="Generic.Files.LineEndings">
-        <properties>
-            <property name="eolChar" value="\n"/>
-        </properties>
-    </rule>
-    <rule ref="PEAR">
-        <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
-        <exclude name="PEAR.NamingConventions.ValidVariableName"/>
-        <exclude name="PEAR.Commenting.ClassComment"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
-        <exclude name="PEAR.Commenting.InlineComment"/>
-    </rule>
+		<type>error</type>
+	</rule>
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n"/>
+		</properties>
+	</rule>
+
+	<file>src</file>
+	<file>app</file>
+	<exclude-pattern type="relative">*/vendor/**/tmp/*</exclude-pattern>
+	<rule ref="PEAR">
+		<exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+		<exclude name="PEAR.NamingConventions.ValidVariableName"/>
+		<exclude name="PEAR.Commenting.ClassComment"/>
+		<exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
+		<exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
+		<exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
+		<exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
+		<exclude name="PEAR.Commenting.InlineComment"/>
+	</rule>
+
 	<rule ref="Generic.Metrics.CyclomaticComplexity"/>
 	<rule ref="Generic.Metrics.NestingLevel"/>
 	<rule ref="Generic.NamingConventions.ConstructorName"/>
@@ -35,12 +40,29 @@
 	<rule ref="Generic.PHP.NoSilencedErrors"/>
 	<rule ref="Generic.Strings.UnnecessaryStringConcat"/>
 	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
-	<rule ref="Generic.WhiteSpace.ScopeIndent"/>
+	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="ignoreIndentationTokens" type="array">
+                <element value="T_COMMENT"/>
+                <element value="T_DOC_COMMENT_OPEN_TAG"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.PHP.LowerCaseType"/>
+	<rule ref="Generic.Arrays.ArrayIndent"/>
+
+
+
 	<rule ref="MySource.PHP.EvalObjectFactory"/>
 	<rule ref="MySource.PHP.ReturnFunctionValue"/>
+
 	<rule ref="PEAR.Classes.ClassDeclaration"/>
+
 	<rule ref="PSR1.Classes.ClassDeclaration"/>
 	<rule ref="PSR1.Files.SideEffects"/>
+
 	<rule ref="PSR2.Classes.ClassDeclaration"/>
 	<rule ref="PSR2.Classes.PropertyDeclaration"/>
 	<rule ref="PSR2.ControlStructures.ControlStructureSpacing"/>
@@ -50,6 +72,7 @@
 	<rule ref="PSR2.Methods.MethodDeclaration"/>
 	<rule ref="PSR2.Namespaces.NamespaceDeclaration"/>
 	<rule ref="PSR2.Namespaces.UseDeclaration"/>
+
 	<rule ref="Squiz.PHP.CommentedOutCode"/>
 	<rule ref="Squiz.PHP.DiscouragedFunctions"/>
 	<rule ref="Squiz.PHP.Eval"/>
@@ -59,5 +82,21 @@
 	<rule ref="Squiz.Scope.MemberVarScope"/>
 	<rule ref="Squiz.Scope.MethodScope"/>
 	<rule ref="Squiz.Scope.StaticThisUsage"/>
-    <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+	<rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+	<rule ref="Squiz.Arrays.ArrayDeclaration.KeyNotAligned">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.Arrays.ArrayDeclaration.ValueNotAligned">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine">
+        <severity>0</severity>
+    </rule>
+
+	<rule ref="Zend.Files.ClosingTag"/>
+	<rule ref="PSR12"/>
+	<!-- <rule ref="PHPCompatibility"/> -->
 </ruleset>
