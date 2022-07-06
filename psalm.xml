@@ -5,18 +5,18 @@
 	xmlns="https://getpsalm.org/schema/config"
     xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
     >
-<!-- 
-		<projectFiles>
-			<directory name="DIRECTORY_1" />
-			<directory name="DIRECTORY_2" />
 
-			<file name="FILE_1.php" />
-			<file name="FILE_2.php" />
+		<projectFiles>
+			<directory name="app" />
+			<directory name="src" />
+
+			<file name="config/app.php" />
 		<ignoreFiles>
 			<directory name="vendor" />
+			<directory name="tmp" />
 		</ignoreFiles>
 	</projectFiles>
--->
+
 	<issueHandlers>
 		<LessSpecificReturnType errorLevel="error"/>
 		<!-- level 3 issues - slightly lazy code writing, but provably low false-negatives -->
