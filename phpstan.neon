@@ -1,10 +1,8 @@
 parameters:
     level: 8
     paths:
-        - src1
-        - src2
-        - src3
-        - index.php
+        - src
+        - app
     earlyTerminatingMethodCalls:
         Nette\Application\UI\Presenter:
             - redirect
@@ -13,6 +11,7 @@ parameters:
             - sendResponse
     excludePaths:
         - vendor/*
+        - tmp/*
         - tests/tmp/*
         - tests/*/Example*.php
         - tests/*/console_application_loader.php
