@@ -62,7 +62,14 @@ Run it with command
     php-cs-fixer fix file/directory
 ```
 ## _phpcpd_ - PHP copy/paste detector
-
+Install phpcpd 
+```code
+    composer require --dev sebastian/phpcpd
+```
+Run it with command 
+```code
+    phpcpd file/directory
+```
 ## _phpdcd_ - PHP dead code detector
 
 ## _phan_ - PHP static analysis tool
