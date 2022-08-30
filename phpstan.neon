@@ -1,8 +1,10 @@
 parameters:
     level: 8
     paths:
-        - src
-        - app
+        - src1
+        - src2
+        - src3
+        - index.php
     earlyTerminatingMethodCalls:
         Nette\Application\UI\Presenter:
             - redirect

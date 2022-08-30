@@ -24,7 +24,7 @@ Install phpmd globally
 Place **phpmd.xml** in root directory(not in project/public/).
 Scan with command
 ```code
-    phpmd file/dir html -report-file report.html phpmd.xml
+    phpmd file/dir html --report-file report.html phpmd.xml
 ```
 Report with errors will be saved in **report.html**
 ## _phpstan_ - PHP static analysis tool
@@ -43,12 +43,24 @@ Install **psalm** globally
 ```code
     composer global require vimeo/psalm
 ```
-
+Place **psalm.xml** in root directory(not in project/public/).
+Scan file or directory for issues
+```code
+    psalm
+```
 # Other tools
 
 
 ## _php-cs-fixer_ - PHP coding standard fixer
 
+Install php-cs-fixer 
+```code
+    composer global require friendsofphp/php-cs-fixer
+```
+Run it with command 
+```code
+    php-cs-fixer fix file/directory
+```
 ## _phpcpd_ - PHP copy/paste detector
 
 ## _phpdcd_ - PHP dead code detector
